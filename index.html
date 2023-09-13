@@ -23,7 +23,7 @@
         </a>
         <ul class="nav">
             <li>
-                <a href="/" class="nav-btn active">
+                <a href="/" class="nav-btn active" onclick="resetHeader();">
                     <ion-icon name="home-outline"></ion-icon>
                 </a>
             </li>
@@ -140,17 +140,37 @@
                     </textPath>
                 </text>
             </svg>
-            <a href="#" class="move-down">
+            <a href="#" class="move-down" onclick="initNavigation();">
                 <ion-icon name="heart-outline"></ion-icon>
             </a>
         </div>
     </div>
     <!-- banner end -->
 
+    <!-- main start -->
+    <main>
+        <!-- about start -->
+        <section class="about" id="about"></section>
+        <!-- about end -->
+
+        <!-- services start -->
+        <section class="services" id="services"></section>
+        <!-- services end -->
+
+        <!-- portfolio start -->
+        <section class="portfolio" id="portfolio"></section>
+        <!-- portfolio end -->
+
+        <!-- contact start -->
+        <section class="contact" id="contact"></section>
+        <!-- contact end -->
+    </main>
+    <!-- main end -->
+
+
     <!-- icons js -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 
     <!-- boostrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
