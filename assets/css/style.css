@@ -603,6 +603,123 @@ header.active {
 
 /* services end */
 
+/* portfolio start */
+.portfolio h1 {
+    margin-bottom: 50px;
+}
+
+.portfolio #portfolio-filters {
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio #portfolio-filters li {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 5px;
+    font-size: 0.85em;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #111;
+    transition: 0.3s;
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.portfolio #portfolio-filters li::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 50%;
+    height: 2px;
+    background: var(--primary);
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: center;
+}
+
+.portfolio #portfolio-filters li:hover::before,
+.portfolio #portfolio-filters li.filter-active::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio .portfolio-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.portfolio .portfolio-item .portfolio-img {
+    overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-img img {
+    transition: all 0.6s;
+}
+
+.portfolio .portfolio-item .portfolio-info {
+    position: absolute;
+    opacity: 0;
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+    z-index: 3;
+    transition: all 0.3s;
+    background: var(--primary);
+    padding: 12px 15px;
+}
+
+.portfolio .portfolio-item .portfolio-info h4 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.portfolio .portfolio-item .portfolio-info p {
+    color: #f9fcfe;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
+    position: absolute;
+    right: 40px;
+    font-size: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link:hover,
+.portfolio .portfolio-item .portfolio-info .details-link:hover {
+    color: #111;
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link {
+    right: 10px;
+}
+
+.portfolio .portfolio-item:hover .portfolio-img img {
+    transform: scale(1.15);
+}
+.portfolio .portfolio-item:hover .portfolio-info {
+    visibility: visible;
+    opacity: 1;
+} 
+
+
+/* portfolio end */
+
 
 
 
