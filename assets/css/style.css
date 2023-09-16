@@ -717,8 +717,100 @@ header.active {
     opacity: 1;
 } 
 
-
 /* portfolio end */
+
+/* contact start */
+.contact h1 {
+    margin-bottom: 50px;
+}
+
+.contact .info {
+    width: 100%;
+    background: #fff;
+}
+
+.contact .info ion-icon {
+    font-size: 0.6em;
+    padding: 8px;
+    color: var(--primary);
+    float: left;
+    width: 45px;
+    height: 45px;
+    background: #f4e3ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    margin-right: 20px;
+}
+
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #111;
+}
+
+.contact .info p {
+    padding: 0 0 0 60px;
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #111;
+}
+
+.contact .info .email,
+.contact .info .phone {
+    margin-top: 40px;
+}
+
+.contact form {
+    width: 100%;
+    background: #fff;
+}
+
+.contact form .form-group {
+    padding-bottom: 8px;
+}
+
+.contact form input,
+.contact form textarea {
+    border-radius: 0;
+    box-shadow: none !important;
+    outline: none;
+    font-size: 15px;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.contact form input {
+    height: 45px;
+}
+
+.contact form textarea {
+    padding: 10px 12px;
+}
+
+.contact form button[type='submit'] {
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 10px 25px;
+    color: #fff;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+.contact form button[type='submit']:hover {
+    background: #fff;
+    color: var(--primary);
+}
+/* contact end */
 
 
 
