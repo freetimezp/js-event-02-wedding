@@ -21,8 +21,9 @@
     <!-- header start -->
     <header class="">
         <a href="#" class="logo">Wedding</a>
-        <a href="#" class="menu">
-            <ion-icon name="menu-outline"></ion-icon>
+        <a href="#" class="menu" onclick="toggleMenu();">
+            <ion-icon name="menu-outline" class="open"></ion-icon>
+            <ion-icon name="close-outline" class="close"></ion-icon>
         </a>
         <ul class="nav">
             <li>
@@ -49,6 +50,28 @@
         </div>
     </header>
     <!-- header end -->
+
+    <!-- mobile menu start -->
+    <ul class="nav-mobile">
+        <li>
+            <a href="/" class="nav-btn active" onclick="resetHeader();">
+                <ion-icon name="home-outline"></ion-icon>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-btn" data-target="about">About</a>
+        </li>
+        <li>
+            <a href="#" class="nav-btn" data-target="services">Services</a>
+        </li>
+        <li>
+            <a href="#" class="nav-btn" data-target="portfolio">Portfolio</a>
+        </li>
+        <li>
+            <a href="#" class="nav-btn" data-target="contact">Contact</a>
+        </li>
+    </ul>
+    <!-- mobile menu end -->
 
     <!-- banner start -->
     <div class="banner container-fluid">
